@@ -1,4 +1,5 @@
-import React from 'react'
+'use client';
+import React from 'react';
 
 export default function StepForms({step, data, update}){
   if(step === 0){
