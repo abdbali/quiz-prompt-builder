@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react'
 import StepForms from './StepForms'
 import { normalizeAll } from '../lib/normalize'
