@@ -1,0 +1,28 @@
+:root{
+  --bg:#fbfdff; --card:#ffffff; --muted:#6b7280; --primary:#0b61ff;
+}
+*{box-sizing:border-box}
+html,body,#__next{height:100%}
+body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:#0f172a}
+.root{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:36px}
+.center{width:100%;max-width:900px}
+.card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.06)}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.title{font-size:20px;font-weight:600}
+.steps{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.step-pill{padding:8px 12px;border-radius:999px;background:#f1f5f9;font-size:13px;color:var(--muted)}
+.step-pill.active{background:var(--primary);color:white}
+.form-row{display:flex;gap:12px;margin-bottom:10px}
+.label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+.input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6edf3;font-size:14px}
+textarea{min-height:80px;resize:vertical}
+.btn-row{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}
+.btn{padding:8px 12px;border-radius:8px;border:1px solid #dbe7ff;background:white;cursor:pointer}
+.btn.primary{background:var(--primary);color:white;border:none}
+.small{padding:6px 8px;font-size:13px}
+.list{padding-left:18px;margin:6px 0}
+.result-box{background:#f8fafc;padding:12px;border-radius:8px;margin-top:12px;white-space:pre-wrap}
+.footer{margin-top:14px;text-align:center;color:var(--muted);font-size:13px}
+.counter{display:flex;align-items:center;gap:8px}
+.counter button{padding:6px 10px;border-radius:6px;border:1px solid #e2e8f0;background:white;cursor:pointer}
+.small-x{padding:4px 8px;border-radius:6px}
