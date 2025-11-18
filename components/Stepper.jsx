@@ -1,8 +1,7 @@
 'use client';
-
-import React, { useState } from 'react'
-import StepForms from './StepForms'
-import { normalizeAll } from '../lib/normalize'
+import React, { useState } from 'react';
+import StepForms from './StepForms';
+import { normalizeAll } from '../lib/normalize';
 
 const STEPS = [
   'Program & Sınıf',
@@ -10,7 +9,7 @@ const STEPS = [
   'Soru Tipleri',
   'Bloom & Ek Kriter',
   'Önizle / Oluştur'
-]
+];
 
 export default function Stepper(){
   const [step, setStep] = useState(0)
@@ -30,7 +29,6 @@ export default function Stepper(){
   const prev = () => setStep(s => Math.max(0, s-1))
 
   const generate = () => {
-    // normalize text fields (trim, sentence case, fix punctuation)
     const normalized = normalizeAll({
       program: data.program,
       topic: data.topic,
